@@ -1,0 +1,54 @@
+License: corporate
+Plugin: org.zeroturnaround.javarebel.integration.IntegrationPlugin
+Plugin: com.zeroturnaround.javarebel.guice.GuicePlugin
+Class:com/google/inject/Scopes
+Class:com/google/inject/internal/InjectorImpl
+Class:com/google/inject/internal/ConstructorInjectorStore
+Class:com/google/inject/internal/FailableCache
+Class:com/google/inject/internal/MembersInjectorStore
+Config: rebel.xml
+Plugin: org.zeroturnaround.javarebel.integration.servlet.ServletIntegrationPlugin
+Plugin: org.zeroturnaround.javarebel.integration.jasper.JasperPlugin
+Plugin: org.zeroturnaround.javarebel.integration.fileservlet.FileServletPlugin
+Plugin: org.zeroturnaround.javarebel.integration.catalina.CatalinaPlugin
+Class:org/apache/catalina/loader/WebappLoader
+Class:org/apache/catalina/core/StandardContext
+Class:org/apache/naming/resources/ProxyDirContext
+Class:javax/servlet/ServletContext
+Class:org/apache/catalina/core/ApplicationContextFacade
+Class:org/apache/catalina/loader/WebappClassLoader
+Class:org/apache/catalina/core/StandardWrapperValve
+Plugin: org.zeroturnaround.jrebel.integration.tiles2.Tiles2Plugin
+Plugin: org.zeroturnaround.javarebel.integration.struts.Struts1Plugin
+Plugin: org.zeroturnaround.jrebel.integration.logback.LogbackPlugin
+Plugin: org.zeroturnaround.jrebel.jackson.JacksonPlugin
+Plugin: org.zeroturnaround.javarebel.integration.spring.SpringMvcPlugin
+Plugin: org.zeroturnaround.javarebel.velocity.VelocityPlugin
+Plugin: com.zeroturnaround.javarebel.aspectj.AspectJPlugin
+Plugin: org.zeroturnaround.javarebel.integration.spring.SpringPlugin
+Plugin: org.zeroturnaround.jrebel.integration.tiles1.Tiles1Plugin
+Class:org/apache/jasper/servlet/JspServlet
+Class:org/apache/catalina/servlets/DefaultServlet
+Class:org/springframework/web/servlet/DispatcherServlet
+Class:ch/qos/logback/classic/Logger
+Class:ch/qos/logback/classic/util/ContextInitializer
+Class:org/springframework/context/annotation/ComponentScanBeanDefinitionParser
+Class:org/springframework/context/annotation/ClassPathBeanDefinitionScanner
+Class:org/springframework/context/annotation/ClassPathScanningCandidateComponentProvider
+Class:org/springframework/core/io/support/PathMatchingResourcePatternResolver
+Class:org/springframework/beans/factory/support/DefaultListableBeanFactory
+Class:org/springframework/beans/factory/support/AbstractBeanFactory
+Class:org/springframework/beans/factory/support/DefaultSingletonBeanRegistry
+Class:org/springframework/core/LocalVariableTableParameterNameDiscoverer
+Class:org/springframework/beans/factory/xml/XmlBeanDefinitionReader
+Class:org/springframework/beans/factory/config/PropertyResourceConfigurer
+Class:org/springframework/beans/factory/annotation/AutowiredAnnotationBeanPostProcessor
+Class:org/springframework/context/annotation/CommonAnnotationBeanPostProcessor
+Class:org/springframework/beans/CachedIntrospectionResults
+Class:org/springframework/context/support/ApplicationObjectSupport
+Class:org/springframework/web/servlet/handler/AbstractDetectingUrlHandlerMapping
+Class:org/springframework/web/servlet/handler/AbstractUrlHandlerMapping
+Class:org/apache/tiles/definition/dao/CachingLocaleUrlDefinitionDAO
+Class:org/apache/jasper/EmbeddedServletOptions
+Class:org/apache/jasper/compiler/TldLocationsCache
+Class:org/apache/catalina/connector/CoyoteAdapter
