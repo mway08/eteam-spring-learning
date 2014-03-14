@@ -1,13 +1,8 @@
 package com.eteam.frame.web.example;
 
-import com.eteam.frame.service.example.ExampleServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 /** 
  * 框架实例控制器
@@ -28,7 +23,7 @@ public class ExampleController {
 	
 	static final Logger logger = LoggerFactory.getLogger(ExampleController.class);
 	
-	@Autowired
+	/*@Autowired
     ExampleServiceImpl exampleService;
 
     @RequestMapping("example/test")
@@ -43,6 +38,6 @@ public class ExampleController {
             modelMap.put("iRtn", "0");
         }
         return modelMap;
-    }
+    }*/
 
 }

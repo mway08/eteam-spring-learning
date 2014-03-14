@@ -7,11 +7,4 @@ package com.eteam.frame.web;
  */
 public class AuthHelper {
 
-	/**
-	 * 获取当前登录系统用户ID
-	 * @return
-	 */
-    public static Long getUserSno() {
-        return 0L;
-    }
 }

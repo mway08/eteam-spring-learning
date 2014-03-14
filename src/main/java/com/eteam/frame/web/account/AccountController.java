@@ -1,5 +1,6 @@
 package com.eteam.frame.web.account;
 
+import com.eteam.frame.domain.Account;
 import com.eteam.frame.service.account.AccountService;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.annotation.Resource;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -26,6 +28,10 @@ public class AccountController {
     @ResponseBody
     public Map getAccount( String id,  String name) {
         Map<String, Object> map = new HashMap<String, Object>();
+        Account account = new Account();
+        account.setUsername(name);
+        account.setStatus(id);
+        List<Account> accountList = accountService.getAccountList(account);
         return map;
     }
 
